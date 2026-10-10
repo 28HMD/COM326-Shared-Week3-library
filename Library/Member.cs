@@ -6,7 +6,7 @@ namespace Library
         private int memberId;
         private string name;
         private string address;
-        private string phone;
+        private int phone;
 
         // Public properties
         public int MemberId
@@ -60,14 +60,14 @@ namespace Library
             }
         }
 
-        public string Phone
+        public int Phone
         {
             get { return phone; }
             set { phone = value; }
         }
 
         // Constructor using standard C# casing conventions
-        public Member(int memberId, string memberName, string memberAddress, string memberPhone)
+        public Member(int memberId, string memberName, string memberAddress, int memberPhone)
         {
             this.MemberId = memberId;
             this.Name = memberName;
